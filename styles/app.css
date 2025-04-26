@@ -153,7 +153,7 @@ header img {
 
 @keyframes blink {
   50% {
-    background-color: lightskyblue;
+    background-color: rgb(123, 230, 164);
   }
 }
 
@@ -187,12 +187,14 @@ header img {
   top: 0px;
   right: 0px;
   font-size: 2.2vmax;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   vertical-align: baseline;
-  width: 4vmax;
-  height: 4vmax;
-  border-radius: 50%;
+  width: 3.4vmax;
+  height: 3.4vmax;
+  border-radius: 0.5vmax;
 }
 
 
