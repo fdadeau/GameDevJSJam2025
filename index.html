@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Balance Grid</title>
+  <link rel="stylesheet" type="text/css" href="styles/cube.css">
+  <link rel="stylesheet" type="text/css" href="styles/app.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body class="title">
+
+    <header>
+        <img src="images/balanz-logo.png" id="logo">
+    </header>
+
+    <main>
+        <div>
+            <div class="gauge right" data-caption="vertical">
+                <div class="gauge-fill" id="gaugeX"></div>
+            </div>
+            <label>&#8597; <br> <input type="range" step=1 min="10" max="80" value="40" id="rotateX"></label>
+            <label>&#8596; <br> <input type="range" step=1 min="-80" max="80" value="0" id="rotateZ"></label>
+            <div class="gauge left" data-caption="horizontal">
+                <div class="gauge-fill" id="gaugeY"></div>
+            </div>
+            <br>
+            <button id="btnPause">&#9776;</button>
+            <p id="msg"></p>
+        </div>
+        <div id="scene">
+            <div id="stage">
+            </div>
+        </div>       
+    </main>
+    
+    <aside>
+        <div></div>
+    </aside>
+
+    <nav>
+        <h2>Level selection</h2>
+        <h3></h3>
+        <div></div>
+
+    </nav>
+
+</body>
+</html>
