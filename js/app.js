@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (score == 3 && level.hint) {
                 score = 1;
             }
-            msg.innerHTML = `<h4>Balance restored!<br>${"&#11088; ".repeat(score)}${"<span style='filter: grayscale(1);'>&#11088; </span>".repeat(3-score)}</h4><p><button id='btnRestart'>Restart</button><button id="btnBack">Menu</button>${currentLevel+1 < LEVELS.size ? '<button id="btnNext">Next level</button></p>' : ''}`;
+            msg.innerHTML = `<h4>Balance restored!<br>${"&#11088; ".repeat(score)}${"<span style='filter: grayscale(1);'>&#11088; </span>".repeat(3-score)}</h4><p><button id='btnRestart'>Restart</button><button id="btnBack">Menu</button>${currentLevel+1 < LEVELS.length ? '<button id="btnNext">Next level</button></p>' : ''}`;
             const scores = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
             if (!scores[currentLevel] || score > scores[currentLevel]) {
                 scores[currentLevel] = score;
