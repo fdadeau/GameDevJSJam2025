@@ -8,7 +8,7 @@ Play online at: https://fdadeau.github.io/GameDevJSJam2025
 
 Restore the balance of the board by moving the cubes on it. 
 
-The larger the cube, the higher the weight. 
+The larger the cube, the heavier the weight. 
 
 Don't unbalance too much the board, or you'll lose.
 
