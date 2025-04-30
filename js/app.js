@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         [gaugeX,gaugeY].forEach((gauge,i) => {
             const clamped = Math.min(50, Math.abs(torques[i]));
             gauge.style.height = `${clamped * 6}%`;
+            gauge.style.transform = `rotate(${torques[i] <= 0 ? 0 : 180}deg)`;
             gauge.parentElement.style.backgroundColor = torques[i] == 0 ? "green" : "white"; 
     
             if (clamped < 1) {
@@ -226,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (score == 3 && level.hint) {
                 score = 1;
             }
-            msg.innerHTML = `<h4>Balance restored!<br>${"&#11088; ".repeat(score)}${"<span style='filter: grayscale(1);'>&#11088; </span>".repeat(3-score)}</h4><p><button id='btnRestart'>Restart</button><button id="btnBack">Menu</button><button id="btnNext">Next level</button></p>`;
+            msg.innerHTML = `<h4>Balance restored!<br>${"&#11088; ".repeat(score)}${"<span style='filter: grayscale(1);'>&#11088; </span>".repeat(3-score)}</h4><p><button id='btnRestart'>Restart</button><button id="btnBack">Menu</button>${currentLevel+1 < LEVELS.size ? '<button id="btnNext">Next level</button></p>' : ''}`;
             const scores = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
             if (!scores[currentLevel] || score > scores[currentLevel]) {
                 scores[currentLevel] = score;
@@ -295,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => {
                 document.querySelector(`.cube[data-l="${solution[0].from.l}"][data-c="${solution[0].from.c}"]`).style.animation = "";
                 document.querySelector(`.cell[data-l="${solution[0].to.l}"][data-c="${solution[0].to.c}"]`).style.animation = "";
-            }, 1600);
+            }, 2000);
             return;
         }
         if (e.target.id === "btnClose") {
