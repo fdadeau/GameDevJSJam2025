@@ -6,7 +6,7 @@ Play online at: https://fdadeau.github.io/GameDevJSJam2025
 
 ## Goal of the game
 
-Restore the balance the board by moving the cubes on it. 
+Restore the balance of the board by moving the cubes on it. 
 
 The larger the cube, the higher the weight. 
 
