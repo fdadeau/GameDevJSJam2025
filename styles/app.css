@@ -171,12 +171,13 @@ header img {
   border: 1px solid #ccc;
   position: relative;
   background: #eee;
+  padding: 0;
 }
 .gauge-fill {
   position: absolute;
   bottom: 50%;
   left: 0;
-  width: 100%;
+  width: 19px;
   height: 0;
   transform-origin: bottom center;
   border-bottom: solid 1px #ccc;

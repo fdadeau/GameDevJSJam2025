@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         [gaugeX,gaugeY].forEach((gauge,i) => {
             const clamped = Math.min(50, Math.abs(torques[i]));
             gauge.style.height = `${clamped * 6}%`;
-            gauge.style.transform = `rotate(${torques[i] <= 0 ? 0 : 180}deg)`;
+            if (torques[i] !== 0) gauge.style.transform = `rotate(${torques[i] <= 0 ? 0 : 180}deg)`;
             gauge.parentElement.style.backgroundColor = torques[i] == 0 ? "green" : "white"; 
     
             if (clamped < 1) {
