@@ -17,7 +17,7 @@ Don't unbalance too much the board, or you'll lose.
 
 Solve the levels in a minimal number of moves.
 
-<img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc6.png" alt="screenshot1" height="240" style="display: inline;"/> <img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc2.png" alt="screenshot2" height="240" style="display: inline;"/> <img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc4.png" alt="screenshot3" height="240" style="display: inline;"/>
+<img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc6.png" alt="screenshot1" height="200" style="display: inline;"/> <img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc2.png" alt="screenshot2" height="200" style="display: inline;"/> <img src="https://fdadeau.github.io/GameDevJSJam2025/images/sc4.png" alt="screenshot3" height="200" style="display: inline;"/>
   
 
 ## How to play?  
